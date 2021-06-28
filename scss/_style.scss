@@ -1,0 +1,142 @@
+@import "customVariables";
+// NAVBAR
+nav {
+    background-color: $primary;
+    .name {
+        display: flex;
+        h3 {
+            margin-top: 12px;
+            color: $white;
+        }
+    }
+    ul {
+        li {
+            margin-left: 1em;
+            font-size: 1.7em;
+            margin-top: 3px;
+            a {
+                color: $white;
+                font-weight: $font-weight-bold;
+            }
+            .btn-nav {
+                background-color: $secondary !important;
+                color: $white;
+                font-size: 1em !important;
+                font-weight: $font-weight-bold !important;
+                border: none;
+                margin-top: 3px;
+                span {
+                    background-color: red;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+    .navbar-toggler {
+        .navbar-toggler-icon {
+            border: 1px solid $white;
+        }
+    }
+}
+
+.social {
+    margin-left: 1.25em;
+}
+
+// SECTION a
+.section-a {
+    margin-top: 5em;
+    img {
+        max-width: 400px;
+        margin-bottom: 5em;
+    }
+    .col-12 {
+        margin-top: 5em;
+        text-align: center;
+        p {
+            margin-top: 2em;
+        }
+    }
+}
+
+// SECTION b
+.section-b {
+    margin-top: $section-margin-top;
+    img {
+        max-width: 90%;
+    }
+    .responsive {
+        text-align: center;
+        font-size: 1.25em;
+    }
+}
+
+//SECTION c
+.section-c {
+    margin-top: $section-margin-top;
+    .row {
+        text-align: center;
+    }
+    p {
+        margin-top: 2em;
+    }
+}
+
+//SECTION d
+.section-d {
+    margin-top: $section-margin-top;
+    .col-md-4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        .fas {
+            font-size: 5em;
+            color: $primary;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        .fab {
+            font-size: 5em;
+            color: $primary;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        h3 {
+            margin: 0.5em 0;
+        }
+        p {
+            margin: 1em 0;
+        }
+    }
+}
+
+// SECTION e
+.section-e {
+    margin: $section-margin-top;
+    .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    img {
+        margin-top: 5em;
+    }
+}
+
+// FOOTER
+footer {
+    background-color: $secondary;
+    .social-list {
+        display: flex;
+        justify-content: center;
+        margin: 2em;
+        a {
+            color: $white;
+            margin: 1.3em;
+            font-size: 2em;
+            font-weight: $font-weight-bold;
+        }
+    }
+}

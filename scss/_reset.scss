@@ -1,0 +1,65 @@
+@import "customVariables";
+:root {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-family-heads;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+p {
+    font-family: $font-family-p;
+    font-size: 2em;
+}
+
+.btn {
+    background: $bg-primary;
+    color: $white;
+    font-weight: $font-weight-bold;
+    border: none;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    i {
+        margin-left: 4em;
+    }
+}
+
+li {
+    list-style-type: none;
+}
