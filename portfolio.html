@@ -14,20 +14,21 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container justify-content-around">
-            <div class="mr-5">
+            <div class="name">
                 <a class="navbar-brand mr-5" href="#">
                     <img src="./images/Project1/a  icon.png" alt="" width="50" height="50" />
                 </a>
+                <h3>Adem</h3>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="home.htm" target="_blank">Home</a>
+                        <a class="nav-link" aria-current="page" href="home.html" target="_blank">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="portfolio.html" target="_blank">Portfolio</a>
@@ -38,14 +39,16 @@
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="mentorship.html" target="_blank">Mentorship</a>
                     </li>
-                    <li><button type="button" class="btn btn-primary">
-                        Messages <span class="badge bg-secondary">3</span>
-                      </button></li>
+                    <li>
+                        <button type="button" class="btn-nav">
+                    Messages <span>3</span>
+                  </button>
+                    </li>
                     <li class="nav-item">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                            Get in Touch
-                          </button>
+                        <button type="button" class="btn-nav" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+Get in Touch
+</button>
 
                         <!-- Modal -->
                         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -67,51 +70,51 @@
                                         <div class="mb-3">
                                             <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required minlength="2"></textarea >
-                                                                  </div>
-                                                              </div>
-                                                              <div class="modal-footer">
-                                                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                                  <button type="button" class="btn btn-primary">Understood</button>
-                                                              </div>
-                                                          </div>
-                                                      </div>
-                                                  </div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="social">
-                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="social">
-                        <a href="https://www.google.de/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-                    </li>
-                    <li class="social">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i
-            ></a>
-                    </li class="social">
-                    <li>
-                        <a href="https://www.linkedin.com/company/linkedin" target="_blank"><i class="fab fa-linkedin-in"></i
-            ></a>
-                    </li>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="social">
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="social">
+                    <a href="https://www.google.de/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="social">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i
+          ></a>
+                </li class="social">
+                <li>
+                    <a href="https://www.linkedin.com/company/linkedin" target="_blank"><i class="fab fa-linkedin-in"></i
+          ></a>
+                </li>
 
-                </ul>
-            </div>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
     <!-- Recent Works -->
-    <section>
+    <section class="recent-works">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h1>My Recent Works</h1>
-                    <p>Here are a few design projects I've worked on recently. Want to see more? Email me.</p>
+                    <p>Here are a few design projects I've worked on recently. Want to see more? <span>Email me.</span></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="projects">
         <div class="container">
             <div class="row ">
                 <div class="col-md-4 card bg-light text-white">
@@ -157,7 +160,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 card bg-light text-white">
-                    <img src="./images/Project1/bootstrap.png" class="card-img" alt="...">
+                    <img src="./images/Project1/bootstrap2.png" class="card-img" alt="...">
                     <div class="card-img-overlay">
                         <h5 class="card-title">Bootstrap Toolkit</h5>
                         <p class="card-text">Build fast, responsive sites with Bootstrap</p>
@@ -175,33 +178,33 @@
             <div class="row">
                 <!-- icons -->
                 <div class="col-12">
-                    <ul>
-                        <li class="social">
+                    <ul class="social-list">
+                        <li class="social1">
                             <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                         </li>
-                        <li class="social">
+                        <li class="social2">
                             <a href=""><i class="fab fa-google-plus-g"></i></a>
                         </li>
-                        <li class="social">
+                        <li class="social3">
                             <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i
-          ></a>
-                        </li class="social">
-                        <li>
+              ></a>
+                        </li">
+                        <li class="social4">
                             <a href="https://www.linkedin.com/company/linkedin"><i class="fab fa-linkedin-in"></i
-          ></a>
+              ></a>
                         </li>
                     </ul>
                 </div>
                 <!--  Page links -->
                 <div class="col-12">
-                    <ul>
+                    <ul class="social-list">
                         <li><a href="home.html" target="_blank">Home</a></li>
                         <li><a href="portfolio.html" target="_blank">Portfolio</a></li>
                         <li><a href="services.html" target="_blank">Services</a></li>
                         <li><a href="mentorship.html" target="_blank">Mentorship</a></li>
 
                         <li>  <!-- Button trigger modal -->
-                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                          <button type="button" class="btn-bottom btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
     Get in Touch
   </button>
   
@@ -238,13 +241,13 @@
                 </div>
                 <!-- Privacy -->
                 <div class="col-12">
-                    <ul>
+                    <ul class="social-list">
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Cookie Policy</a></li>
                         <li><a href="#">Terms & Conditions</a></li>
                     </ul>
                 </div>
-                <div class="back-to top col-12">
+                <div class="back-to-top col-12">
                     <p class="top">
                         Back to top
                     </p>
