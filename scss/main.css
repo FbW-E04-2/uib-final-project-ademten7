@@ -10134,17 +10134,122 @@ nav .navbar-toggler .navbar-toggler-icon {
   height: 100vh;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .section-a img {
-  max-width: 400px;
+  max-width: 250px;
   margin-bottom: 5em;
+  -webkit-clip-path: circle(26.3% at 51% 51%);
+          clip-path: circle(26.3% at 51% 51%);
 }
 .section-a .col-12 {
   margin-top: 5em;
   text-align: center;
+  color: #fff;
 }
 .section-a .col-12 p {
   margin-top: 2em;
+  color: black;
+}
+.section-a .bubbles {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.section-a .bubbles .bubble1 {
+  width: 45px;
+  margin: 0;
+  border: none;
+  -webkit-animation: moving 7s 1s linear infinite;
+          animation: moving 7s 1s linear infinite;
+}
+.section-a .bubbles .bubble2 {
+  width: 120px;
+  margin: 0;
+  border: none;
+  -webkit-animation: moving 7s 5s linear infinite;
+          animation: moving 7s 5s linear infinite;
+}
+.section-a .bubbles .bubble3 {
+  width: 55px;
+  margin: 0;
+  border: none;
+  -webkit-animation: moving 7s 3s linear infinite;
+          animation: moving 7s 3s linear infinite;
+}
+.section-a .bubbles .bubble4 {
+  width: 70px;
+  margin: 0;
+  border: none;
+  -webkit-animation: moving 7s 1s linear infinite;
+          animation: moving 7s 1s linear infinite;
+}
+.section-a .bubbles .bubble5 {
+  width: 50px;
+  margin: 0;
+  border: none;
+  -webkit-animation: moving 7s 6s linear infinite;
+          animation: moving 7s 6s linear infinite;
+}
+.section-a .bubbles .bubble6 {
+  width: 100px;
+  margin: 0;
+  border: none;
+  -webkit-animation: moving 7s 2s linear infinite;
+          animation: moving 7s 2s linear infinite;
+}
+.section-a .bubbles .bubble7 {
+  width: 45px;
+  margin: 0;
+  border: none;
+  -webkit-animation: moving 7s 1s linear infinite;
+          animation: moving 7s 1s linear infinite;
+}
+@-webkit-keyframes moving {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(-250px) scale(1.1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-500px) scale(1.4);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateY(-750px) scale(1.6);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-900px) scale(2);
+  }
+}
+@keyframes moving {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(-250px) scale(1.1);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-500px) scale(1.4);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateY(-750px) scale(1.6);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-900px) scale(2);
+  }
 }
 
 .section-b {
@@ -10155,11 +10260,52 @@ nav .navbar-toggler .navbar-toggler-icon {
   background: #f1efef;
 }
 .section-b img {
-  max-width: 90%;
+  max-width: 100%;
+  -webkit-animation: image 8s 2s ease-in infinite alternate;
+          animation: image 8s 2s ease-in infinite alternate;
+}
+@-webkit-keyframes image {
+  0% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes image {
+  0% {
+    transform: translateX(-1200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .section-b .responsive {
   text-align: center;
   font-size: 1.25em;
+  -webkit-animation: responsive 8s 2s ease-in infinite alternate;
+          animation: responsive 8s 2s ease-in infinite alternate;
+}
+@-webkit-keyframes responsive {
+  0% {
+    transform: translateX(1200px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@keyframes responsive {
+  0% {
+    transform: translateX(1200px);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
+}
+@media (max-width: 992px) {
+  .section-b .responsive {
+    margin-top: 4em;
+  }
 }
 
 .section-c {
