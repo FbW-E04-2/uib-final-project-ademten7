@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="portfolio.html">Portfolio</a>
@@ -96,7 +96,30 @@
               ></a>
                     </li>
                     <li><a href="#"><i class="fas fa-share-alt"></i></a></li>
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-search" data-bs-toggle="modal" data-bs-target="#exampleModalSearch"></i></a>
+                    <!-- Modal -->
+<div class="modal fade" id="exampleModalSearch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">What are you looking for?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>
+                    
 
                 </ul>
             </div>
@@ -125,11 +148,29 @@
             <img class="bubble4" src="./images/Project1/bubble.png" alt="">
             <img class="bubble5" src="./images/Project1/bubble.png" alt="">
             <img class="bubble6" src="./images/Project1/bubble.png" alt="">
-            <img class="bubble7" src="./images/Project1/bubble.png" alt="">
-          
-            
-            
+            <img class="bubble7" src="./images/Project1/bubble.png" alt="">    
         </div>
+        <div class="glassmorphism glassmorphism1">
+            <i class="fab fa-html5"></i>
+            <h3>HTML</h3>
+            <p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web.</p>
+        </div>
+        <div class="glassmorphism  glassmorphism2">
+            <i class="fab fa-css3-alt"></i>
+            <h3>CSS</h3>
+            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</p>
+        </div>
+        <div class="glassmorphism glassmorphism3">
+            <i class="fab fa-js"></i>
+            <h3>JAVASCRIPT</h3>
+            <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.</p>
+        </div>
+        <div class="glassmorphism glassmorphism4">
+            <i class="fab fa-java"></i>
+            <h3>JAVA OOP</h3>
+            <p>Java Object Oriented Programming Language is at the heart of our digital lifestyle.</p>
+        </div>
+
     </section>
     <!-- Section-b -->
     <section class="section-b">
@@ -263,6 +304,7 @@
           </div>
         </div>
       </div> -->
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -289,7 +331,7 @@
                 <!--  Page links -->
                 <div class="col-12">
                     <ul class="social-list">
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="portfolio.html" >Portfolio</a></li>
                         <li><a href="services.html" >Services</a></li>
                         <li><a href="mentorship.html" >Mentorship</a></li>
@@ -342,7 +384,7 @@
                     <p class="top">
                         Back to top
                     </p>
-                    <a href="home.html"><i class="fas fa-arrow-circle-up"></i></a>
+                    <a href="index.html".html"><i class="fas fa-arrow-circle-up"></i></a>
                 </div>
             </div>
         </div>
