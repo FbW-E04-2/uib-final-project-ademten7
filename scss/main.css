@@ -10128,8 +10128,9 @@ nav ul li .btn-nav span {
   background-color: red;
   padding: 0 5px;
 }
-nav .navbar-toggler .navbar-toggler-icon {
-  border: 1px solid #fff;
+nav .navbar-toggler-icon i {
+  color: #fff;
+  font-size: 1.5em;
 }
 nav .nav-link {
   position: relative;
