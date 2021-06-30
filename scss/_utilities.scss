@@ -41,6 +41,21 @@
     align-items: $align;
 }
 
+//set the image
+@mixin image($bg-position, $size, $position) {
+    background-position: $bg-position;
+    background-size: $size;
+    position: $position;
+}
+
+//set the icons
+@mixin icons($size, $color, $m-top, $m-bottom) {
+    font-size: $size;
+    color: $color;
+    margin-top: $m-top;
+    margin-bottom: $m-bottom;
+}
+
 //set text color based on the background color
 @function set-text-color($bg-color) {
     @if (lightness($bg-color) >70) {
