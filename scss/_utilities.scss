@@ -21,8 +21,32 @@
     margin-top: $top;
 }
 
-//set to h3
+//set  h3
 @mixin h3($top, $color) {
     margin-top: $top;
     color: $color;
+}
+
+//set footer social links
+@mixin socialLinks($radius, $margin) {
+    border-radius: $radius;
+    margin: $margin;
+}
+
+//set footer back to top button
+@mixin backToTop($display, $direction, $justify, $align) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//set text color based on the background color
+@function set-text-color($bg-color) {
+    @if (lightness($bg-color) >70) {
+        @return #333;
+    }
+    @else {
+        @return #fff;
+    }
 }

@@ -309,6 +309,11 @@ nav {
         align-items: center;
         justify-content: center;
     }
+    h2 {
+        text-align: center;
+        background-color: $white;
+        color: set-text-color($white);
+    }
     img {
         margin-top: 5em;
     }
@@ -326,23 +331,19 @@ footer {
         margin: 2em;
         .social1 {
             background: #2ba1c5;
-            border-radius: 100%;
-            margin: 1.3em;
+            @include socialLinks(100%, 1.3em);
         }
         .social2 {
             background: #b30c0c;
-            border-radius: 100%;
-            margin: 1.3em;
+            @include socialLinks(100%, 1.3em);
         }
         .social3 {
             background: #3664a2;
-            border-radius: 100%;
-            margin: 1.3em;
+            @include socialLinks(100%, 1.3em);
         }
         .social4 {
             background: #1e75af;
-            border-radius: 100%;
-            margin: 1.3em;
+            @include socialLinks(100%, 1.3em);
         }
         a {
             color: $white;
@@ -357,10 +358,11 @@ footer {
         }
     }
     .back-to-top {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include backToTop(flex, column, center, center);
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
         p {
             font-size: 1.5em;
             color: $white;

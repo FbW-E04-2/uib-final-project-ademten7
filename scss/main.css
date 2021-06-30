@@ -10455,6 +10455,11 @@ nav .social {
   align-items: center;
   justify-content: center;
 }
+.section-e h2 {
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+}
 .section-e img {
   margin-top: 5em;
 }
