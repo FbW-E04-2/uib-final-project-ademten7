@@ -99,3 +99,24 @@ li {
         background: rgb(177, 171, 171);
     }
 }
+
+//set to navbar link color
+%color {
+    background-color: $secondary;
+}
+
+.home {
+    @extend %color;
+}
+
+.portfolio {
+    @extend %color;
+}
+
+.services {
+    @extend %color;
+}
+
+.mentorship {
+    @extend %color;
+}

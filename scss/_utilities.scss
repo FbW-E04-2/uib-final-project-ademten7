@@ -1,1 +1,28 @@
 @import "customVariables";
+//to set bubbles
+@mixin bubblesGeneral($width, $position, $bottom, $display, $content) {
+    width: $width;
+    position: $position;
+    bottom: $bottom;
+    display: $display;
+    justify-content: $content;
+}
+
+//to set bubble margin and border
+@mixin bubbleMarginAndBorder($margin, $border) {
+    margin: $margin;
+    border: $border;
+}
+
+//set to home "li" element
+@mixin liHomeElement($left, $size, $top) {
+    margin-left: $left;
+    font-size: $size;
+    margin-top: $top;
+}
+
+//set to h3
+@mixin h3($top, $color) {
+    margin-top: $top;
+    color: $color;
+}
