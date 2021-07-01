@@ -4,6 +4,7 @@
 // NAVBAR
 nav {
     background-color: $primary;
+    box-shadow: 0 0 50px rgba(5, 5, 5, 0.993);
     .name {
         display: flex;
         h3 {
@@ -223,7 +224,7 @@ nav {
     }
     img {
         max-width: 100%;
-        animation: image 6s 2s ease-in infinite alternate;
+        animation: image 6s 2s ease-in 1 alternate;
         @keyframes image {
             0% {
                 transform: translateX(-1200px);
@@ -236,7 +237,7 @@ nav {
     .responsive {
         text-align: center;
         font-size: 1.25em;
-        animation: responsive 6s 2s ease-in infinite alternate;
+        animation: responsive 6s 2s ease-in 1 alternate;
         @keyframes responsive {
             0% {
                 transform: translateX(1200px);

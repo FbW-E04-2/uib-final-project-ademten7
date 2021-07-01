@@ -10094,6 +10094,7 @@ li {
 
 nav {
   background-color: #06bc9b;
+  box-shadow: 0 0 50px rgba(5, 5, 5, 0.993);
 }
 nav .name {
   display: flex;
@@ -10352,8 +10353,8 @@ nav .social {
 }
 .section-b img {
   max-width: 100%;
-  -webkit-animation: image 6s 2s ease-in infinite alternate;
-          animation: image 6s 2s ease-in infinite alternate;
+  -webkit-animation: image 6s 2s ease-in 1 alternate;
+          animation: image 6s 2s ease-in 1 alternate;
 }
 @-webkit-keyframes image {
   0% {
@@ -10374,8 +10375,8 @@ nav .social {
 .section-b .responsive {
   text-align: center;
   font-size: 1.25em;
-  -webkit-animation: responsive 6s 2s ease-in infinite alternate;
-          animation: responsive 6s 2s ease-in infinite alternate;
+  -webkit-animation: responsive 6s 2s ease-in 1 alternate;
+          animation: responsive 6s 2s ease-in 1 alternate;
 }
 @-webkit-keyframes responsive {
   0% {
